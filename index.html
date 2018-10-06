@@ -1,0 +1,743 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Medicare | BCBSIL</title>
+<link rel="stylesheet" href="css/foundation.css">
+<link rel="stylesheet" href="css/custom.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+
+<!--START HEADER-->
+<header> 
+  <!--START HELP BAR-->
+  <div id="help-bar">
+    <div class="row">
+      <div class="large-12 columns text-right"> <a href="javascript:void(0);" onclick="oo_feedback.show()" class="show-for-large" ><span aria-hidden="true">[+]</span> Feedback</a> <a class="translation" mporgnav="" onclick="return switchLanguage('es'); function switchLanguage(lang) { MP.SrcUrl=unescape('mp_js_orgin_url');MP.UrlLang='mp_js_current_lang';MP.init(); MP.switchLanguage(MP.UrlLang==lang?'en':lang); return false; }" href="https://espanol.bcbsil.com/site-name" id="espSwitch">En español</a> </div>
+    </div>
+  </div>
+  
+  <!--START LOGO BAR-->
+  <div id="logo-bar">
+    <div class="row">
+      <div class="large-8 medium-6 small-12 columns medium-text-left" id="main-logo"> <a href="#" target="_blank" ><img src="images/logo/bcbsil-logo.svg" alt="Blue Cross and Blue Shield of Illinois Home" title="Blue Cross and Blue Shield of Illinois Home"></a> </div>
+      
+      <!--START SEARCH-->
+      <div id="search-container" class="large-4 medium-6 small-12 columns text-center medium-text-right">
+        <form id="search-bar" class="input-group noEMA" method="get" onsubmit="get_action(this);" action="">
+          <input class="input-group-field search" type="text" aria-label="Search" placeholder="Search">
+          <div class="input-group-button">
+            <input class="button search-button" value="" src="" type="submit" aria-label="Search Submit">
+          </div>
+        </form>
+      </div>
+      <!--END SEARCH--> 
+    </div>
+  </div>
+  
+  <!--START TOP BAR-->
+  <div class="row small-collapse medium-collapse large-uncollapse">
+    <nav class="top-bar large-12 columns" role="navigation">
+      <div class="top-bar-left">
+        <ul id="mainNav" class="dropdown menu show-for-large" data-dropdown-menu>
+          <li><a href="index.html" class="home-icon active"><img src="images/icon/icon-home.svg" alt="Medicare Home" title="Medicare Home"></a></li>
+          <li><a href="inner-2-col.html">Medicare Basics</a></li>
+          <li><a href="inner-2-col-t.html">Blue Cross Medicare Options<sup>SM</sup></a></li>
+          <li><a href="#">Member Services</a></li>
+          <li><a href="#">Tools & Resources</a></li>
+        </ul>
+        <ul class="dropdown menu hide-for-large" data-dropdown-menu>
+          <li><a href="#" class="mobile-icon" data-open="offCanvas" aria-expanded="false" aria-controls="offCanvas" onclick="$('#offCanvas').foundation();"><span class="sr-only">open side navigation menu</span><img src="images/icon/mobile-menu-icon.png" alt="Mobile Menu Icon" title="Mobile Menu Toggle"></a></li>
+        </ul>
+      </div>
+      <div class="top-bar-right">
+        <ul class="dropdown menu" data-dropdown-menu>
+          <li> <a href="#" class="show-for-large" >Contact Us</a> </li>
+          <div class="dropdown-menu" id="dropdownContact">
+            <div class="row">
+              <div class="small-12 columns">
+                <ul>
+                  <li>
+                    <p class="heading">Contact Us</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consecteur adipiscing elit</a></p>
+                  </li>
+                  <li>
+                    <p class="heading">Secondary Chat Info</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consecteur adipiscing elit</a></p>
+                  </li>
+                  <li>
+                    <p class="heading">FAQs</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consecteur adipiscing elit</a></p>
+                  </li>
+                  <li>
+                    <p class="heading">Other Links</p>
+                    <p>Lorem ipsum dolor sit amet, <a href="#">consecteur adipiscing elit</a></p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <li>
+            <button class="dropdown-toggle" data-pair="dropdownLogIn">Log in</button>
+          </li>
+          <div class="dropdown-menu" id="dropdownLogIn">
+            <section class="content-area login-pane text-center medium-text-left large-text-left"> 
+              
+              <!--START LOGIN TOGGLE-->
+              
+              <ul class="tab-toggle-button" >
+                <li class="tab-button"><a href="#tab-panel1" aria-selected="true" class="is-active" ><span class="block-text" >Member</span> Log In</a></li>
+                <li class="tab-button"><a href="#tab-panel2" ><span class="block-text" >Returning</span> Shopper Log In</a></li>
+              </ul>
+              
+              <!--END LOGIN TOGGLE--> 
+              
+              <!--START BAM LOGIN-->
+              
+              <div class="tab-container" >
+                <div class="tab-content-box is-active" id="tab-panel1" >
+                  <div class="row"  >
+                    <div class="small-12 columns"><span class="login-logo-container" ><img src="images/logo/bam-logo.svg" width="175" height="59" alt="Blue Access for Members"/></span> </div>
+                    <div class="small-12 columns">
+                      <form class="noEMA bam-login" method="post" name="LoginInfoForm" id="BamLogin" role="form">
+                        <fieldset >
+                          <legend  class="sr-only" >Member Login</legend>
+                          <label for="userName">User Name:</label>
+                          <input type="text" name="userName" id="userName" maxlength="50" aria-label="Blue Access for Members User Name">
+                          <label for="password">Password:</label>
+                          <input type="password" name="password" id="password" maxlength="50" aria-label="Blue Access for Members">
+                          <div class="button-container">
+                            <input type="submit" value="Log In" onclick="submitBam();" title="Log In" class="button secondary-blue" aria-label="Log In to Blue Access for Members">
+                          </div>
+                        </fieldset>
+                      </form>
+                      <ul class="arrow-blue">
+                        <li>New user? <a href="https://members.hcsc.net/wps/PA_BAMLogin/bamGateway?corpEntCode=IL1&amp;cmdAction=doRegister" aria-label="Register Now for Blue Access for Members" target="_blank" >Register now</a>.</li>
+                        <li>Forgot <a href="https://members.hcsc.net/wps/PA_BAMLogin/bamGateway?corpEntCode=IL1&amp;cmdAction=findUsername" aria-label="Forgot Blue Access for Members User Name?" target="_blank" >user name</a> or <a href="https://members.hcsc.net/wps/PA_BAMLogin/bamGateway?corpEntCode=IL1&amp;cmdAction=resetPassword" aria-label="Forgot Blue Access for Members Password?" target="_blank" >password</a>?</li>
+                        <li>Take a <a href="#" data-open="bamvideo" onclick="$(document).foundation();" aria-label="Blue Access for Members Tour">tour</a>.</li>
+                        
+                        <!-- START HIDDEN MODAL VIDEO -->
+                        <div class="large reveal" id="bamvideo" data-reveal data-reset-on-close="true" align="center"> 
+                          
+                          <!--START VIDEO TITLE-->
+                          <p>Blue Access for Members Video Tour</p>
+                          <!--END VIDEO TITLE--> 
+                          
+                          <!--VIDEO--------------------------------------------------------
+                                        
+                                        <div class="video-container" >
+                                        <iframe src="https://www.bcbsil.com/mmedia/bamtrailer/bam.htm" width="720" height="404" frameborder="0" allowfullscreen ></iframe>
+                                        </div>
+                                        -----------------------------------------------------END VIDEO--> 
+                          
+                          <!--START VIDEO--> 
+                          <!--
+                                        By use of this code snippet, I agree to the Brightcove Publisher T and C 
+                                        found at https://accounts.brightcove.com/en/terms-and-conditions/. 
+                                        --> 
+                          
+                          <script language="JavaScript" type="text/javascript" src="https://sadmin.brightcove.com/js/BrightcoveExperiences.js"></script>
+                          <div class="videoWrapper">
+                            <object id="myExperience2761777766001" class="BrightcoveExperience">
+                              <param name="bgcolor" value="#FFFFFF" />
+                              <param name="width" value="720" />
+                              <param name="height" value="404" />
+                              <param name="playerID" value="2759283291001" />
+                              <param name="playerKey" value="AQ~~,AAAA_JIAUYk~,tcj1kwnrU6kgudWS8LbjDbdx0FSzjHEu" />
+                              <param name="isVid" value="true" />
+                              <param name="isUI" value="true" />
+                              <param name="dynamicStreaming" value="true" />
+                              <param name="@videoPlayer" value="2761777766001" />
+                              <!--Security for HTTPS-->
+                              <param name="secureConnections" value="true" />
+                              <param name="secureHTMLConnections" value="true" />
+                            </object>
+                          </div>
+                          
+                          <!-- 
+                          This script tag will cause the Brightcove Players defined above it to be created as soon
+                          as the line is read by the browser. If you wish to have the player instantiated only after
+                          the rest of the HTML is processed and the page load is complete, remove the line.
+                          --> 
+                          
+                          <script type="text/javascript">brightcove.createExperiences();</script>
+                          
+                          <!--END VIDEO--> 
+                          
+                          <!--START VIDEO TRANSCRIPT--> 
+                          
+                          
+                          
+                          <ul class="accordion" data-accordion  data-allow-all-closed="true" style="text-align: left;">
+                          <li class="accordion-item" data-accordion-item>
+                          <a href="#" class="accordion-title">View Transcript</a>
+                          <div class="accordion-content" data-tab-content style="text-align: left; max-height: 300px; overflow-y: scroll;">
+                          <p>As a Blue Cross and Blue Shield member, you get Blue Access for Members, a website where key features of your plan are just a click or a tap away. Find highlights quickly, along with your payment history and costs for seeing a doctor. If your plan offers pharmacy, dental, or vision benefits, you'll find those details here too. You can even print copies of your ID card.</p>
+<p>Use the cost estimator tool for budgeting. This helps you plan for tests and treatments, and get a handle on the cost of care. Checking the status of claims is easy. They're here in one place. We've added a search function and more filtering tools to help you find the information you need. You can create claim groups to organize claims the way you want them.</p>
+<p>Add your own notes, too. You can estimate and manage health care costs, and help find a provider, if needed. Research health and wellness topics, download forms. You can even watch health care videos. Private and safe. Total control, complete access, wherever and whenever you want it. Log in today. It's that easy.</p>                                               
+                          </div>
+                          </li>
+                          </ul>
+                          
+                          
+                          <!--END VIDEO TRANSCRIPT--> 
+                          
+                          <!--START MODAL CLOSE BUTTON-->
+                          <button class="close-button" data-close aria-label="Close reveal" type="button"> <span aria-hidden="true">&times;</span> </button>
+                          <!--END MODAL CLOSE BUTTON--> 
+                          
+                        </div>
+                        <!-- END HIDDEN MODAL VIDEO -->
+                        
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!--END panel1--> 
+                <!--END BAM LOGIN --> 
+                
+                <!--START RETURNING SHOPPER LOG IN-->
+                
+                <div class="tab-content-box" id="tab-panel2" >
+                  <div class="row"  >
+                    <div class="small-12 columns">
+                      <form name="returning_shopper_login" id="returning_shopper_login"  method="post">
+                        <fieldset>
+                          <legend class="sr-only" >Returning Shopper Log In</legend>
+                          <input name="redirectUrl" type="hidden" id="redirectUrl" value="" />
+                          <input name="state" type="hidden" id="state"  value="" />
+                          <label for="returningUserName">User Name: </label>
+                          <input class="shopInput" name="userName" id="returningUserName" type="text" size="15" maxlength="50">
+                          <label for="returningPassword">Password: </label>
+                          <input class="shopInput" name="password" id="returningPassword" type="password" size="15" maxlength="50">
+                          <label class="label-long" id="clickCheck2" for="rememberUser2">
+                            <input id="rememberUser2" name="rememberUser2" type="checkbox" value="true" checked="checked">
+                            Remember me on this computer </label>
+                        </fieldset>
+                      </form>
+                      <p class="login-link">Forgot <a href="#" id="forgotUserName" target="_blank" ><span>user name</span> </a> or <a href="#" id="forgotPassword" target="_blank" >password</a>?</p>
+                                         
+                      
+                      <input class="button secondary-blue" type="button" value="Log In" aria-label="Log In to Returning Shopper Log In" id="submit-shopper" />
+                      
+                    </div>
+                  </div>
+                  <!--END ROW--> 
+                </div>
+                <!--END panel2--> 
+                <!--END RETURNING SHOPPER LOG IN--> 
+                
+              </div>
+              <!--END LOGIN tabs--> 
+              
+            </section>
+          </div>
+          <!--END dropdownLogIn-->
+        </ul>
+      </div>
+    </nav>
+  </div>
+</header>
+<!--END HEADER--> 
+
+<!--START MAIN SECTION-->
+<main id="main" role="main" > 
+  <!--START BANNER-->
+  <section id="banner" role="banner">
+    <div class="row small-collapse medium-collapse large-uncollapse">
+      <div class="large-12 columns">
+        <div class="row collapse banner" >
+          <div class="large-4 medium-12 small-12 columns"> 
+            
+            <!--START MUST INCLUDE BANNER CONTENT CONTAINER-->
+            <div id="banner-leftCol" class="banner-content"> 
+              
+              <!--START BANNER HEADER-->
+              <h1>Find the Right Medicare Plan</h1>
+              <!--END BANNER HEADER--> 
+              
+              <!--START BANNER COPY-->
+              <p>The Medicare Annual Enrollment Period begins on October 15. Review your options now and find the plan that works for you.</p>
+              <!--END BANNER COPY--> 
+              
+              <!--START BANNER BUTTON--> 
+              <a href="" target="_blank" class="button">Compare Plans</a> 
+              <!--END BANNER BUTTON--> 
+            </div>
+            <!--END MUST INCLUDE BANNER CONTENT CONTAINER--> 
+            
+          </div>
+          <div class="large-8 medium-12 small-12 columns"> 
+            <!--START BANNER IMAGE CONTAINER-->
+            <div id="banner-rightCol"  class="banner-image" ><img id="banner-image" src="images/banner/bcbs-medicare-banner.jpg" width="750" height="401" > </div>
+            <!--END BANNER IMAGE CONTAINER--> 
+            
+          </div>
+        </div>
+        <!--end #banner--> 
+      </div>
+    </div>
+  </section>
+  <!--END BANNER--> 
+  
+  <!-------------------------------------------------------------------
+---------------------------------------------------------------------
+---------------------------------------------------------------------
+-------------------------------------------------------------TAB TEST
+  
+  <div class="row column" >
+  	<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge-delay="500" data-tabs id="deeplinked-tabs">
+  <li class="tabs-title is-active"><a href="#panel1d" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2d">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3d">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4d">Tab 4</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="deeplinked-tabs">
+  <div class="tabs-panel is-active" id="panel1d">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+  <div class="tabs-panel" id="panel2d">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+  <div class="tabs-panel" id="panel3d">
+    <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+  </div>
+  <div class="tabs-panel" id="panel4d">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</div>
+            
+            
+            
+  </div>
+---------------------------------------------------------------------
+---------------------------------------------------------------------  
+--------------------------------------------------------------------> 
+  
+  <!--START BUCKETS--> 
+  <!-- Cards in Foundation 6: https://foundation.zurb.com/sites/docs/card.html -->
+  <section id="buckets-3" class="homepage-row threeboxesvariant">
+    <div class="row">
+      <div class="small-12 medium-4 large-4 columns">
+        <div class="card"> 
+          
+          <!--START CARD ICON-->
+          <div class="card-icon"> <img src="images/icon/icon-medicare-basics.svg" width="60" height="60" > </div>
+          <!--END CARD ICON-->
+          
+          <div class="card-divider"> 
+            
+            <!--START BUCKET HEADER-->
+            <h2>Medicare Basics</h2>
+            <!--END BUCKET HEADER--> 
+            
+          </div>
+          <div class="card-section"> 
+            
+            <!--START BUCKET INTRODUCTION-->
+            <p>Learn the basics of Medicare and how it works.</p>
+            <!--END BUCKET INTRODUCTION--> 
+          </div>
+          <div class="card-action"> 
+            
+            <!--START BUCKET CTA BUTTON--> 
+            <a href="" class="button secondary" target="_blank" >View Medicare Basics</a> 
+            <!--END BUCKET CTA BUTTON--> 
+            
+          </div>
+        </div>
+      </div>
+      <div class="small-12 medium-4 large-4 columns">
+        <div class="card"> 
+          
+          <!--START CARD ICON-->
+          <div class="card-icon"> <img src="images/icon/icon-compare-plans.svg" width="60" height="60" > </div>
+          <!--END CARD ICON-->
+          
+          <div class="card-divider">
+            <h2>Compare Plans</h2>
+          </div>
+          <div class="card-section">
+            <p>Find the plan that works for you.</p>
+          </div>
+          <div class="card-action"> <a href="" class="button secondary" target="_blank" >View Blue Cross Medicare Options</a> </div>
+        </div>
+      </div>
+      <div class="small-12 medium-4 large-4 columns">
+        <div class="card"> 
+          <!--START CARD ICON-->
+          <div class="card-icon"> <img src="images/icon/icon-member-services.svg" width="60" height="60" > </div>
+          <!--END CARD ICON-->
+          <div class="card-divider">
+            <h2>Member Services</h2>
+          </div>
+          <div class="card-section">
+            <p>Get answers to your questions, find forms and more.</p>
+          </div>
+          <div class="card-action"> <a href="" class="button secondary"  target="_blank">View Member Services</a> </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END BUCKETS--> 
+  
+  <!--START DOUBLE ROW--> 
+  <!-- Cards in Foundation 6: https://foundation.zurb.com/sites/docs/card.html -->
+  <section id="buckets-2" class="homepage-row twoboxesvariant"> 
+    
+    <!--START ROW 1-->
+    <div class="row">
+      <div class="medium-5 medium-offset-1 small-12 columns">
+        <div class="card c1">
+          <div class="card-divider"> 
+            <!--START BUCKET HEADER-->
+            <h3>Help Me Choose a Plan</h3>
+            <!--END BUCKET HEADER--> 
+            
+          </div>
+          <div class="card-section">
+            <p>Not sure what plan you need? Answer a few questions to help you decide.</p>
+          </div>
+          <div class="card-action"> 
+            
+            <!--START CARD LINK LIST-->
+            <ul class="link-list">
+              <li><a href="#" >Choose a plan</a></li>
+            </ul>
+            <!--END CAD LINK LIST--> 
+            
+          </div>
+        </div>
+      </div>
+      <div class="medium-5 small-12 columns">
+        <div class="card c2">
+          <div class="card-divider">
+            <h3>Forms & Documents</h3>
+          </div>
+          <div class="card-section">
+            <p>Do you need to submit a prescription claim form, search a drug list or find a provider directory? Find the forms and documents you need in our new Tools and Resources section.</p>
+          </div>
+          <div class="card-action"> 
+            <!--START CARD LINK LIST-->
+            <ul class="link-list">
+              <li><a href="#" >Tools and resources</a></li>
+            </ul>
+            <!--EMD CARD LINK LIST--> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END ROW 1--> 
+    
+    <!--START ROW 2-->
+    <div class="row">
+      <div class="medium-5 medium-offset-1 small-12 columns">
+        <div class="card c3">
+          <div class="card-divider"> 
+            <!--START BUCKET HEADER-->
+            <h3>Find an In-Network Provider</h3>
+            <!--END BUCKET HEADER--> 
+            
+          </div>
+          <div class="card-section">
+            <p>Search to find network doctors, specialists, hospitals and other health care providers. </p>
+          </div>
+          <div class="card-action"> 
+            <!--START CARD LINK LIST-->
+            <ul class="link-list">
+              <li><a href="#"  target="_blank" >Find doctors and hospitals</a></li>
+            </ul>
+            <!--END CARD LINK LIST--> 
+          </div>
+        </div>
+      </div>
+      <div class="medium-5 small-12 columns">
+        <div class="card c4">
+          <div class="card-divider">
+            <h3>Prescription Drug Estimator & Pharmacy Finder</h3>
+          </div>
+          <div class="card-section">
+            <p>Use this tool to choose the right plan that covers your prescription drugs and pharmacy, estimate annual cost savings when you enroll, and find an in-network pharmacy near you.</p>
+          </div>
+          <div class="card-action"> 
+            <!--START CARD LINK LIST-->
+            <ul class="link-list">
+              <li><a href="#" target="_blank" >Get an estimate</a></li>
+            </ul>
+            <!--END CARD LINK LIST--> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--END ROW 2--> 
+    
+    <!--START ROW 3--> 
+    
+  </section>
+  <!--END BUCKETS--> 
+  
+  <!--START #DOI-BOX-->
+  
+  <div class="doi">
+    <div class="row column add-margin">
+      <div id="doi-id-en" class="doi-number" >
+        <p>[english desktop] ILMICROSITELP - REV 10/14 </p>
+      </div>
+      <div id="doi-id-en-mb" class="doi-number" >
+        <p>[mobile] ILMICROSITELP - REV 10/14 </p>
+      </div>
+      <div id="doi-id-es" class="doi-number" >
+        <p>[spanish] ILMICROSITELP - REV 10/14 </p>
+      </div>
+      <div id="doi-id-es-mb" class="doi-number" >
+        <p>[spanish mobile] ILMICROSITELP - REV 10/14 </p>
+      </div>
+    </div>
+  </div>
+  <!--END #DOI-BOX--> 
+  
+</main>
+<!--END MAIN SECTION--> 
+
+<!--START FOOTER SECTION-->
+<footer>
+  <div class="row">
+    <div class="large-10 large-offset-1 columns text-center" >
+      <p>This information is a solicitation for insurance.</p>
+      <p><strong>Medicare Supplement Insurance Plan Notice:<br />
+        Not connected with or endorsed by the U.S. Government or Federal Medicare Program.</strong></p>
+      <p>Medicare Supplement Insurance Plans are offered by Blue Cross and Blue Shield of Texas, a Division of Health Care Service Corporation, a Mutual Legal Reserve Company, an Independent Licensee of the Blue Cross and Blue Shield Association.</p>
+    </div>
+  </div>
+  <hr>
+  <div class="row add-margin">
+    <div class="large-12 columns text-center links" >
+      <nav>
+        <ul class="utility-nav">
+          <li><a href="#" target="_blank" >Legal and Privacy</a></li>
+          <li><a href="#" target="_blank" >Important Plan Information</a></li>
+          <li>
+            <div id="en-non-discrimination" class="toggle-pdf" ><a href="#" target="_blank" >[English]Non-Discrimination Notice</a></div>
+            <div id="es-non-discrimination" class="toggle-pdf" ><a href="#" target="_blank" >[Spanish]Non-Discrimination Notice</a></div>
+          </li>
+          <li><a href="#" >Site Map</a></li>
+          <li><a href="#" >Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="row add-margin" >
+    <div class="medium-offset-1 medium-10 small-12 columns text-center copyright">
+      <p>
+        <nw>&copy; Copyright <script>document.write(new Date().getFullYear())</script></nw>
+        Health Care Service Corporation. All Rights Reserved.</p>
+    </div>
+  </div>
+  <div class="row add-margin" >
+    <div class="medium-offset-1 medium-10 small-12 columns text-center copyright">
+      <p class="pdf-message">File is in portable document format (PDF). To view this file, you may need to install a PDF reader program. Most PDF readers are a free download. One option is Adobe<sup>&reg;</sup> Reader<sup>&reg;</sup> which has a built-in screen reader. Other Adobe accessibility tools and information can be downloaded at <a href="http://access.adobe.com" target="_blank" >http://access.adobe.com</a></p>
+      <p id="leaving-website-msg" class="leaving-website">You are leaving this website/app ("site"). This new site may be offered by a vendor or an independent third party. The site may also contain non-Medicare related information. In addition, some sites may require you to agree to their terms of use and privacy policy.</p>
+    </div>
+  </div>
+  <div class="row add-margin" >
+    <div class="large-12 columns text-center">
+      <ul class="social-list" >
+        <li><a href="#" target="_blank" ><img src="images/icon/facebook.svg"  alt="Visit us on Facebook" title="Facebook" class="social-icon"></a></li>
+        <li><a href="#" target="_blank" ><img src="images/icon/youtube.svg"  alt="Visit us on Youtube" title="Youtube" class="social-icon"></a></li>
+        <li><a href="#" target="_blank" ><img src="images/icon/twitter.svg" alt="Visit us on Twitter" title="Twitter" class="social-icon"></a></li>
+        <li><a href="#" target="_blank" ><img src="images/icon/connect.svg" alt="Visit us on Connect" title="Connect" class="social-icon"></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row" >
+    <div class="medium-offset-1 medium-10 small-12 columns">
+      <div id="en-material-id" class="materialId" >
+        <p>Last Updated: 09302018<br>
+          Y0096_WEB_TX_MM19 Pending</p>
+      </div>
+      <div id="es-material-id" class="materialId"  >
+        <p>Última actualización: 09302018<br>
+          Y0096_WEB_TX_MM19 Pending</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--END FOOTER SECTION--> 
+
+<!-- MOBILE NAV MODULE -->
+<div id="mobile-nav-module" style="display: none;">
+  <nav> 
+    <!--PRIMARY navigation data-submenu-toggle="true"-->
+    <ul class="vertical menu accordion-menu" data-accordion-menu  data-submenu-toggle="true" >
+      <li><a href="index.html" class="active" >Home</a></li>
+      <!--START MEDICARE BASICS-->
+      <li><a href="inner-2-col.html" >Medicare Basics</a> 
+        <!--START SECONDARY NAVIGATION FOR MEDICARE BASICS-->
+        <ul class="menu vertical nested">
+          <li><a href="inner-2-col-nested-page.html">How Medicare Works</a> 
+            
+            <!--START THIRD NAVIGATION FOR MEDICARE BASICS-->
+            <ul class="menu vertical nested">
+              <li><a href="#">Part A</a></li>
+              <li><a href="#">Part B</a></li>
+              <li><a href="#">Part C</a></li>
+              <li><a href="#">Part D</a></li>
+              <li><a href="#">Medicare Supplement
+                Insurance Plans </a></li>
+            </ul>
+            <!--END THIRD NAVIGATION FOR MEDICARE BASICS--> 
+          </li>
+          <li><a href="#">Part vs Plan</a></li>
+          <li><a href="#">Turning 65</a> 
+            <!--START THIRD MEDICARE SCENARIOS/EXAMPLES-->
+            <ul class="menu vertical nested">
+              <li><a href="#">Medicare Scenarios/ Examples</a></li>
+            </ul>
+            <!--END THIRD MEDICARE SCENARIOS/EXAMPLES--> 
+          </li>
+          <li><a href="#">Difference Between U65 and O65</a></li>
+          <li><a href="#">How Do You Qualify?</a></li>
+          <li><a href="#">When to Enroll</a></li>
+          <li><a href="#">Why Choose Blue?</a></li>
+        </ul>
+        <!--END SECONDARY navigation for Medicare Basics--> 
+        
+      </li>
+      <!--END MEDICARE BASICS--> 
+      
+      <!--START BLUE CROSS MEDICARE OPTIONS-->
+      <li><a href="inner-2-col-t.html">Blue Cross Medicare Options<sup>SM</sup></a> 
+        <!--SECONDARY navigation for Blue Cross Medicare Options--> 
+        
+        <!--START SECONDARY NAVIGATION FOR BLUE CROSS MEDICARE OPTIONS-->
+        <ul class="menu vertical nested">
+          <li><a href="#" >What is Blue Cross Medicare Options?</a></li>
+          <li><a href="#">Medicare Advantage Plans?</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">What is Blue Cross Medicare Advantage Plans?</a></li>
+              <li><a href="#">Eligibility</a></li>
+              <li><a href="#">Enrollment</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Prescription Drug Coverage</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">What is Blue Cross Medicare Prescription Drug Coverage?</a></li>
+              <li><a href="#">Eligibility</a></li>
+              <li><a href="#">Enrollment</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Supplement Insurance/ Medigap</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">What is Blue Cross Medicare Supplement Insurance Plans?</a></li>
+              <li><a href="#">Benefits/ Charts/ Compare All Plans</a></li>
+              <li><a href="#">Eligibility</a></li>
+              <li><a href="#">Enrollment</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Medicare Advantage Dual Care (HMO SNP)</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">What is Blue Cross Medicare Advantage Dual Care (HMO SNP)?</a></li>
+              <li><a href="#">Benefits/ Charts/ Compare All Plans</a></li>
+              <li><a href="#">Eligibility</a></li>
+              <li><a href="#">Enrollment</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--END SECONDARY NAVIGATION FOR BLUE CROSS MEDICARE OPTIONS--> 
+        
+      </li>
+      <!--END BLUE CROSS MEDICARE OPTIONS--> 
+      
+      <!--START MEMBER SERVICES-->
+      <li><a href="#">Member Services</a> 
+        <!--SECONDARY navigation-->
+        <ul class="menu vertical nested">
+          <li> <a href="http://www.google.com">Medicare Advantage Plans</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Welcome to Blue Cross Medicare Advantage</a></li>
+              <li><a href="#">New to Medicare</a></li>
+              <li><a href="#">After You Enroll</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Blue Access for Members (BAM)</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Prescription Drug Coverage</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Welcome to Blue Cross Medicare Prescription Drug Coverage</a></li>
+              <li><a href="#">New to Medicare</a></li>
+              <li><a href="#">After You Enroll</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Blue Access for Members (BAM)</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Supplement Insurance/ Medigap</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Welcome to Blue Cross Medicare Supplement Insurance/ Medigap</a></li>
+              <li><a href="#">New to Medicare</a></li>
+              <li><a href="#">After You Enroll</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Medicare Advantage Dual Care</a>
+            <ul class="menu vertical nested">
+              <li><a href="#">Welcome to Blue Cross Medicare Advantage Dual Care</a></li>
+              <li><a href="#">New to Medicare</a></li>
+              <li><a href="#">After You Enroll</a></li>
+              <li><a href="#">Using Your Medicare Plan</a></li>
+              <li><a href="#">Forms & Documents</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <!--END MEMBER SERVICES--> 
+      
+      <!--TOOLS & RESOURCES-->
+      <li><a href="#">Tools & Resources</a> 
+        
+        <!--SECONDARY navigation-->
+        <ul class="menu vertical nested">
+          <li><a href="#">Care Giver Tips</a></li>
+          <li><a href="#">Forms & Documents</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">External Links</a></li>
+        </ul>
+        <!--END SECONDARY navigation--> 
+        
+      </li>
+      <!--END TOOLS & RESOURCES-->
+      
+      <li><a href="#">Contact Us</a> </li>
+      <!--END CONTACT US-->
+      
+    </ul>
+  </nav>
+</div>
+<!-- END MOBILE NAV MODULE --> 
+
+<script src="js/vendor/jquery.js"></script> 
+<script src="js/vendor/what-input.js"></script> 
+<script src="js/vendor/foundation.js"></script> 
+<script src="js/app.js"></script> 
+<script src="js/custom.js"></script> 
+<script src="js/oo_engine.min.js"></script> 
+<script src="js/oo_conf.js"></script>
+</body>
+</html>

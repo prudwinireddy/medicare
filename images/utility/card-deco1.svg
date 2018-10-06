@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="50" height="67" viewBox="0 0 50 67">
+    <defs>
+        <path id="a" d="M0 .663h1024v626.288H0z"/>
+        <rect id="c" width="406" height="250" x="95" y="955" rx="4"/>
+        <filter id="b" width="105.2%" height="108.4%" x="-2.6%" y="-3%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.134142889 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#F3F7FA" transform="translate(-441 -57)" xlink:href="#a"/>
+        <g transform="translate(-441 -969)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <text fill="#005487" font-family="OpenSans-Semibold, Open Sans" font-size="18" font-weight="500" letter-spacing=".18" transform="translate(-309 22.668)">
+            <tspan x="0" y="19.926">Help Me Choose a Plan</tspan>
+        </text>
+        <text fill="#464645" font-family="OpenSans, Open Sans" font-size="16" transform="translate(-309 22.668)">
+            <tspan x=".94" y="59.211">Not sure what plan you need? Answer a </tspan> <tspan x=".94" y="81.211">few questions to help you decide.</tspan>
+        </text>
+        <g stroke="#90B0CB">
+            <rect width="36.612" height="36.612" x=".841" y="19.849" rx="2"/>
+            <rect width="22.393" height="22.393" x="26.757" y="1.003" opacity=".293" rx="2"/>
+            <rect width="12.39" height="12.39" x="28.89" y="53.266" opacity=".293" rx="2"/>
+        </g>
+    </g>
+</svg>

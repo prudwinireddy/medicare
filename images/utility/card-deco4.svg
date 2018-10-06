@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="66" viewBox="0 0 62 66">
+    <defs>
+        <path id="a" d="M0 .663h1024v626.288H0z"/>
+        <rect id="c" width="406" height="271" x="522" y="1226" rx="4"/>
+        <filter id="b" width="105.2%" height="107.7%" x="-2.6%" y="-2.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.134142889 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#F3F7FA" transform="translate(-852 -321)" xlink:href="#a"/>
+        <g transform="translate(-852 -1233)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <g stroke="#90B0CB">
+            <rect width="48.723" height="48.723" x="11.951" y="15.961" rx="2"/>
+            <rect width="34.719" height="34.719" x="1.094" y=".504" opacity=".293" rx="2"/>
+        </g>
+        <text fill="#005487" font-family="OpenSans-Semibold, Open Sans" font-size="18" font-weight="500" letter-spacing=".18" transform="translate(-289.688 27.967)">
+            <tspan x="0" y="19.926">Plan and Drug Selector Tool</tspan>
+        </text>
+    </g>
+</svg>

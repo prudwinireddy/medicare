@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="270" height="60" viewBox="0 0 270 60">
+    <g fill="none" fill-rule="evenodd" transform="translate(1)">
+        <path stroke="#D7D7D7" stroke-linecap="square" d="M94.5 29H0M268.5 29H174"/>
+        <circle cx="134" cy="30" r="30" fill="#0F6DBE"/>
+        <text fill="#FFF" font-family="OpenSans-Semibold, Open Sans" font-size="18" font-weight="500" transform="translate(106 13)">
+            <tspan x="19.007" y="19.032">vs</tspan>
+        </text>
+    </g>
+</svg>

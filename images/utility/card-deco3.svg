@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="62" height="48" viewBox="0 0 62 48">
+    <defs>
+        <path id="a" d="M0 .663h1024v626.288H0z"/>
+        <rect id="c" width="406" height="271" x="95" y="1226" rx="4"/>
+        <filter id="b" width="105.2%" height="107.7%" x="-2.6%" y="-2.8%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.134142889 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#F3F7FA" transform="translate(-424 -325)" xlink:href="#a"/>
+        <g transform="translate(-424 -1237)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <text fill="#005487" font-family="OpenSans-Semibold, Open Sans" font-size="18" font-weight="500" letter-spacing=".18" transform="translate(-292 23.109)">
+            <tspan x="0" y="19.926">Find an In-Network Provider</tspan>
+        </text>
+        <g stroke="#90B0CB" transform="rotate(180 31 24)">
+            <rect width="30.354" height="30.354" x="30.535" y="16.715" rx="2"/>
+            <rect width="16.021" height="16.021" x=".805" y="21.845" rx="2"/>
+            <rect width="25.447" height="25.447" x="13.94" y=".503" opacity=".293" rx="2"/>
+        </g>
+    </g>
+</svg>

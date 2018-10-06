@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="59" height="66" viewBox="0 0 59 66">
+    <defs>
+        <path id="a" d="M0 .663h1024v626.288H0z"/>
+        <rect id="c" width="406" height="250" x="522" y="955" rx="4"/>
+        <filter id="b" width="105.2%" height="108.4%" x="-2.6%" y="-3%" filterUnits="objectBoundingBox">
+            <feOffset dy="3" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="3"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.134142889 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <use fill="#F3F7FA" transform="translate(-857 -60)" xlink:href="#a"/>
+        <g transform="translate(-857 -972)">
+            <use fill="#000" filter="url(#b)" xlink:href="#c"/>
+            <use fill="#FFF" xlink:href="#c"/>
+        </g>
+        <text fill="#005487" font-family="OpenSans-Semibold, Open Sans" font-size="18" font-weight="500" letter-spacing=".18" transform="translate(-294.688 19.668)">
+            <tspan x="0" y="19.926">Forms &amp; Documents</tspan>
+        </text>
+        <text fill="#464645" font-family="OpenSans, Open Sans" font-size="16" transform="translate(-294.688 19.668)">
+            <tspan x=".959" y="59.211">Do you need to submit a prescription claim </tspan> <tspan x=".959" y="81.211">form, search a drug list or find a provider </tspan> <tspan x=".959" y="103.211">directory? Find the forms and documents </tspan> <tspan x=".959" y="125.211">you need in our new Tools and Resources </tspan> <tspan x=".959" y="147.211">section.</tspan>
+        </text>
+        <g stroke="#90B0CB">
+            <rect width="48.723" height="48.723" x=".951" y=".961" rx="2"/>
+            <rect width="22.991" height="22.991" x="34.813" y="41.824" opacity=".293" rx="2"/>
+        </g>
+    </g>
+</svg>
